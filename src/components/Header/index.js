@@ -1,5 +1,5 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
 import {
   header,
   header__wrap,
@@ -7,7 +7,7 @@ import {
   header__nav,
   header__link,
   header__linkHome,
-} from "./header.module.css"
+} from "./header.module.css";
 
 const Header = () => (
   <header className={header}>
@@ -27,9 +27,12 @@ const Header = () => (
         <Link to="/app/details" className={header__link}>
           Details
         </Link>
+        <Link to="/about" className={header__link}>
+          About
+        </Link>
       </nav>
     </div>
   </header>
-)
+);
 
-export default Header
+export default Header;
